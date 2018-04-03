@@ -5,24 +5,12 @@ reads the same backward as forward, such as madam or racecar.
 
 `input` will be a single string without spaces and punctuation. */
 
-const evenLengthPalindrome = array => {
+const checkPalindrome = array => {
   let buffer = array.length - 1;
-  for (let i = 0; i < array.length / 2; i++) {
+  let middle = Math.floor(array.length / 2);
+  for (let i = 0; i < middle; i++) {
     if (array[i] === array[buffer]) {
       buffer--;
-      continue;
-    }
-    return false;
-  }
-  return true;
-};
-
-const oddLengthPalindrome = array => {
-  let oddBuffer = array.length - 1;
-  let oddMiddle = Math.floor(array.length / 2);
-  for (let i = 0; i < oddMiddle; i++) {
-    if (array[i] === array[oddBuffer]) {
-      oddBuffer--;
       continue;
     }
       return false;
@@ -33,11 +21,8 @@ const oddLengthPalindrome = array => {
 const isPalindrome = input => {
   if (input.length === 0 || input.length === 1) {
     return true;
-  }
-  if (input.length % 2 === 0) {
-    return evenLengthPalindrome(input);
-  } else {
-    return oddLengthPalindrome(input);
+  }else{
+    return checkPalindrome(input);
   }
 };
 
