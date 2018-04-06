@@ -5,6 +5,7 @@ Spaces are not encoded/decoded. For example: "gsrh nvhhztv" will be decoded as "
 */
 
 const decodeMessage = (string) => {
+  
 
 };
 

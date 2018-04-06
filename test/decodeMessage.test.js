@@ -9,3 +9,8 @@
 
 // decodeMessage("gsrh nvhhztv") --> "this message"
 // decodeMessage("r slkv mlylwb wvxlwvh gsrh nvhhztv") --> "i hope nobody decodes this message"
+const decodeMessage = require('../src/decodeMessage');
+
+it('should behave...', () => {
+
+});

@@ -9,7 +9,8 @@
 // isPalindrome('umbrella') --> false isPalindrome from "../src/isPalindrome"
 
 
-const isPalindrome = require("../src/isPalindrome")
+const isPalindrome = require("../src/isPalindrome");
+
 it('empty string should return true', () => {
   expect(isPalindrome('')).toEqual(true);
 });
